@@ -1,0 +1,27 @@
+RewriteEngine on
+
+RewriteRule ^home$ media.php?module=home [L]
+RewriteRule ^login$ login.php [L]
+RewriteRule ^checkLogin$ checkLogin.php [L]
+RewriteRule ^logout$ logout.php [L]
+RewriteRule ^kecamatan$ media.php?module=kecamatan [L]
+RewriteRule ^puskesmas$ media.php?module=puskesmas [L]
+RewriteRule ^kasusTb$ media.php?module=kasustb [L]
+RewriteRule ^kepadatan$ media.php?module=kepadatan [L]
+RewriteRule ^kemiskinan$ media.php?module=kemiskinan [L]
+RewriteRule ^administrator$ media.php?module=administrator [L]
+RewriteRule ^barang_masuk$ media.php?module=barang_masuk [L]
+RewriteRule ^transaksi media.php?module=transaksi [L]
+RewriteRule ^barang_keluar$ media.php?module=barang_keluar [L]
+
+
+
+RewriteRule ^kmeans$ media.php?module=kmeans [L]
+RewriteRule ^kasusTB-([0-9]+)$ media.php?module=kasusTB&tahun=$1 [L]
+RewriteRule ^kepadatans-([0-9]+)$ media.php?module=kepadatans&tahun=$1 [L]
+RewriteRule ^kemiskinans-([0-9]+)$ media.php?module=kemiskinans&tahun=$1 [L]
+RewriteRule ^kmeanss-([0-9]+)$ media.php?module=kmeanss&tahun=$1 [L]
+
+
+
+Options All -Indexes
